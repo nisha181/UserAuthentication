@@ -1,0 +1,21 @@
+spring:
+    datasource:
+        #driver-class-name: com.mysql.cj.jdbc.Driver
+        driverClassName: org.h2.Driver
+        #url: jdbc:mysql://localhost/bmi?useSSL=false
+        url: jdbc:h2:mem:user
+        username: nisha
+        password: nisha
+        platform: h2
+    h2:
+        console:
+            enabled: true
+    jpa:
+        hibernate:
+            ddl-auto: create
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.H2Dialect
+        show-sql: true
+    application:
+        name: userauth   
